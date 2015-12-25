@@ -1,0 +1,68 @@
+@CHARSET "UTF-8";
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #131023;
+
+}
+.stage {
+    position: absolute;
+    background: url(img/ws_Night_Stars_2560x1440.jpg) no-repeat;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+#plane{
+    position: absolute;
+    z-index: 3;
+    background: url(img/Cruiser_Hull_Stealth_B_DA-SR_12.png) no-repeat;
+    width: 110px;
+    height: 150px;
+    bottom: 0;
+    left:60px;
+}
+#bullet{
+    width: 10px;
+    height: 10px;
+    background-color: firebrick;
+    position: absolute;
+    z-index: 10;
+    visibility: hidden;
+    bottom: 140px;
+    left: 60px;
+}
+#pig{
+    position: absolute;
+    z-index: 2;
+    background: url(img/Flying_Pig_fixed.png) no-repeat;
+    width: 160px;
+    height: 150px;
+    top: 0;
+    left:60px;
+   /*-webkit-animation: movePig 4s linear infinite alternate-reverse;*/
+}
+@keyframes movePig{
+    from{ left: 60px;}
+    to{left: 1200px;}
+}
+#game{
+    position: absolute;
+    z-index: 3;
+    top:0;
+    left: 0;
+    width: 60px;
+    height: 80px;
+    border: 1px solid crimson;
+}
+input{
+    width: 30px;
+
+}
+label span{
+    color: crimson;
+    float: left;
+    font-weight: bold;
+}
